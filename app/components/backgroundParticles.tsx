@@ -1,6 +1,6 @@
-import React, { useRef, useEffect, useMemo } from "react";
+import React, {  useMemo } from "react";
 import * as THREE from "three";
-import { Canvas, useFrame } from "@react-three/fiber";
+
 
 export default function BackGroundParticles() {
   const points = useMemo(() => {

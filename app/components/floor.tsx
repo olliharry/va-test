@@ -1,7 +1,6 @@
 import React from "react";
 import { useLoader } from "@react-three/fiber";
 import { TextureLoader } from "three";
-import * as THREE from "three";
 
 export default function Floor() {
   const colorMap = useLoader(TextureLoader, "/textures/floor/Color.jpg");

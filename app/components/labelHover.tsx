@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import React from "react";
+import {  useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 import TextLabel from "./text";
-import { element } from "three/webgpu";
-import CompTable from "./table";
+
 
 type LabelHoverProps = {
   setBold: React.Dispatch<React.SetStateAction<string[]>>;
@@ -43,19 +42,13 @@ export default function LabelHover({
         break;
       }
     }
-
-    // Update hoveredIndex state if necessary
     if (newHoveredIndex !== hoveredIndex) {
       setHoveredIndex(newHoveredIndex);
-
-      // Create a new bold array based on the updated hovered index
       const newBoldArray = bold.map((value, i) =>
         i === newHoveredIndex ? "bold" : ""
       );
-
       setBold(newBoldArray);
     } else if (newHoveredIndex === null && hoveredIndex !== null) {
-      // If no object is hovered, reset the bold array
       setHoveredIndex(null);
       setBold(bold.map(() => ""));
     }

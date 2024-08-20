@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Text } from "@react-three/drei";
-import { Vector3 } from "three";
 import * as THREE from "three";
 
 interface TextProps {

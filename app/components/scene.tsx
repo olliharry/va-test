@@ -1,10 +1,9 @@
 "use client";
-import React, { useState, useRef } from "react";
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import React, { useState } from "react";
+import { Canvas} from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import LabelHover from "./labelHover";
 import CompTable from "./table";
-import * as THREE from "three";
 import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import LoadFLoodLightModel from "./floodlight";
